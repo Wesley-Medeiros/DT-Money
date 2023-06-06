@@ -21,7 +21,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   border-radius: 6px;
   padding: 2rem;
 
-  hearder {
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
