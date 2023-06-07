@@ -2,11 +2,11 @@
   "transactions": [
     {
       "id": 1,
-      "description": "desenvolvimento de site",
+      "description": "Desenvolvimento de site",
       "type": "income",
       "category": "Venda",
-      "price": "R$ 12.000,00",
-      " createdAt": "'2023-06-07T17:12:52.693Z'"
+      "price": 12000,
+      "createdAt": "'2023-06-07T17:12:52.693Z'"
     },
     
     {
@@ -14,8 +14,17 @@
       "description": "Hamburguer",
       "type": "outcome",
       "category": "alimetação",
-      "price": "-R$ 59,00",
-      " createdAt": "'2023-06-07T17:05:52.693Z'"
-    }  
+      "price": 59,
+      "createdAt": "'2023-06-07T17:15:52.693Z'"
+    }, 
+    
+    {
+      "id": 3,
+      "description": "Cu de Jp",
+      "type": "outcome",
+      "category": "alimetação",
+      "price": 3000,
+      "createdAt": "'2023-06-07T17:11:52.693Z'"
+    }
   ]
 }

@@ -3,11 +3,11 @@ import Header from "../../Components/Header"
 import Summary from "../../Components/Summary"
 import SearchForm from "./components/SearchFrom"
 import { PriceHighlight, TransactionsConatiner, TransactionsTable } from "./styles"
-import { TrasactionsContext } from "../../Contexts/TransactionsContext"
+import { TransactionsContext } from "../../Contexts/TransactionsContext"
 
 function Transactions() {
-  const { transactions } = useContext(TrasactionsContext);
-
+  const { transactions } = useContext(TransactionsContext);
+  
   return(
     <div>
       <Header />
