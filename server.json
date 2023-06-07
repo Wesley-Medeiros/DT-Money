@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 12000,
-      "createdAt": "'2023-06-07T17:12:52.693Z'"
+      "createdAt": "2023-06-07T17:12:52.693Z"
     },
     
     {
@@ -15,7 +15,7 @@
       "type": "outcome",
       "category": "alimetação",
       "price": 59,
-      "createdAt": "'2023-06-07T17:15:52.693Z'"
+      "createdAt": "2023-06-07T17:15:52.693Z"
     }, 
     
     {
@@ -24,7 +24,7 @@
       "type": "outcome",
       "category": "alimetação",
       "price": 3000,
-      "createdAt": "'2023-06-07T17:11:52.693Z'"
+      "createdAt": "2023-06-07T17:11:52.693Z"
     }
   ]
 }
