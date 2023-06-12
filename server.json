@@ -13,7 +13,7 @@
       "id": 2,
       "description": "Hamburguer",
       "type": "outcome",
-      "category": "alimetação",
+      "category": "alimentação",
       "price": 59,
       "createdAt": "2023-06-07T17:15:52.693Z"
     }, 
@@ -22,7 +22,7 @@
       "id": 3,
       "description": "Cu de Jp",
       "type": "outcome",
-      "category": "alimetação",
+      "category": "alimentação",
       "price": 3000,
       "createdAt": "2023-06-07T17:11:52.693Z"
     }
