@@ -4,6 +4,8 @@ import { ArrowCircleUp, ArrowCircleDown, X } from "phosphor-react"
 import * as z from "zod";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod/dist/zod.js";
+import { useContext } from "react";
+import { TransactionsContext } from "../../Contexts/TransactionsContext";
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -16,10 +18,13 @@ type NewTransactionsFormInputs = z.infer<typeof newTransactionFormSchema>
 
 
 function NewTransactionsModal() {
+  const { createTransaction } = useContext(TransactionsContext)
+
   const { 
     control,
     register,
     handleSubmit,
+    reset,
     formState: {
       isSubmitting
      }
@@ -29,8 +34,18 @@ function NewTransactionsModal() {
   });
 
    async function handleCreateNewTransaction(data: NewTransactionsFormInputs) {
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    console.log(data)
+    const { description, category, price, type } = data
+
+    await createTransaction({
+      description,
+      category,
+      price,
+      type,
+    })
+
+    
+
+    reset()
   }
   
   return(
@@ -47,19 +62,22 @@ function NewTransactionsModal() {
               <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
                 <input 
                 type="text" 
-                placeholder="Descrição" 
+                placeholder="Descrição"
+                autoComplete="off" 
                 required 
                 {...register('description')}
                 />
                 <input 
                 type="number" 
                 placeholder="Preço" 
+                autoComplete="off"
                 required 
                 {...register('price', {valueAsNumber: true})}
                 />
                 <input 
                 type="text" 
-                placeholder="Categoria" 
+                placeholder="Categoria"
+                autoComplete="off" 
                 required 
                 {...register('category')}
                 />

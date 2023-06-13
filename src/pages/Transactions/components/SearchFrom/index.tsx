@@ -34,6 +34,7 @@ function SearchForm() {
       <input 
       type="text" 
       placeholder="Busque transações"
+      autoComplete="off"
       {...register('query')}
        />
 
